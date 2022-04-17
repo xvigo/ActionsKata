@@ -5,7 +5,7 @@ namespace Acronyms
 {
     public class AcronymsCreator : IAcronymsCreator
     {
-        private readonly char[] _separators;
+        public readonly char[] _separators;
         private readonly IEnumerable<IModificator> _modifiers;
 
         public AcronymsCreator(char[] separators, IEnumerable<IModificator> modifiers)
