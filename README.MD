@@ -22,6 +22,7 @@ This section describes steps to implement basic Github Actions workflow with .NE
     * use the descriptive naming for the jobs
     * modelate relations between jobs as visualized below
 
+
 ![Expected workflow with defined jobs](docs/images/basic_example.png)
 
 3. (Optional) Extend workflow with step performing static analysis of your code using sonarcloud
@@ -30,7 +31,8 @@ This section describes steps to implement basic Github Actions workflow with .NE
     * Follow steps to integrate Sonarcloud and Github using Github actions
     * Replace placeholder for build command with your build command
     * Check analysis results on pull request detail screen and sonarcloud dashboard
-    * Put badge with analysis results to your README
+    * Put badge with analysis results to your README (see the badge on the top of this readme)
+
 
 ![Expected workflow with sonarcloud job](docs/images/sonarcloud.png)
 
