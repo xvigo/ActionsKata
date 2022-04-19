@@ -1,3 +1,5 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=kubmir_ActionsKata&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=kubmir_ActionsKata)
+
 This repo holds basic app with some unit tests to demonstrate basic usage of the Github Actions with .NET project.
 
 ## Steps
@@ -20,7 +22,7 @@ This section describes steps to implement basic Github Actions workflow with .NE
     * use the descriptive naming for the jobs
     * modelate relations between jobs as visualized below
 
-[Expected workflow with defined jobs](docs/images/basic_example.png)
+![Expected workflow with defined jobs](docs/images/basic_example.png)
 
 3. (Optional) Extend workflow with step performing static analysis of your code using sonarcloud
     * Create free account on [sonarcloud](https://sonarcloud.io/)
@@ -28,7 +30,8 @@ This section describes steps to implement basic Github Actions workflow with .NE
     * Follow steps to integrate Sonarcloud and Github using Github actions
     * Replace placeholder for build command with your build command
     * Check analysis results on pull request detail screen and sonarcloud dashboard
+    * Put badge with analysis results to your README
 
-[Expected workflow with sonarcloud job](docs/images/sonarcloud.png)
+![Expected workflow with sonarcloud job](docs/images/sonarcloud.png)
 
-Disclaimer: Set-up of the workflow is not the best one nor the correct one. It is used to demonstrate basics of the Github Actions and workflow definition. Some jobs can be merged to one, caching may be used or e.g. tests results reporting.
+_Disclaimer:_ Set-up of the workflow is not the best one nor the correct one. It is used to demonstrate basics of the Github Actions and workflow definition. Some jobs can be merged to one, caching may be used or e.g. tests results may be reported.
