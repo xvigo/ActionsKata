@@ -126,8 +126,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: publish
-          path: ./publish
-
-
-
-          
+          path: ./publish          
