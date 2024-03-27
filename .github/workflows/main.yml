@@ -1,0 +1,19 @@
+name: .NET Workflow
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  welcome:
+    name: Welcome Message
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Welcome Message
+        run: echo "Welcome to the .NET Workflow!"
+
