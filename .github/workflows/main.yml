@@ -17,8 +17,8 @@ jobs:
         run: echo "Welcome to the .NET Workflow!"
 
   build:
-    needs: Welcome Message
-    name: Build
+    needs: welcome
+    name: Build 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
